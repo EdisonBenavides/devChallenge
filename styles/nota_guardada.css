@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    font-size: 40px;
 }
 
 .imagen-fondo {
@@ -21,7 +22,7 @@ h1{
 }
 
 .contenedor {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #c3c7ea;
@@ -42,6 +43,7 @@ h1{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
+    font-size: 20px;
 }
 
 .nota-izquierda {
@@ -64,6 +66,8 @@ button {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 3vh;
+    width: 20vh;
+    font-size: 18px;
 }
 
 button:hover {

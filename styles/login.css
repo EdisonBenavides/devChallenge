@@ -36,25 +36,31 @@
 .contenedor-inicio-sesion h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 40px;
 }
 
-.contenedor-inicio-sesion form {
+.contenedor-inicio-sesion form,
+#formularioRegistro {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 
 .contenedor-inicio-sesion label {
     margin-bottom: 10px;
 }
 
-.contenedor-inicio-sesion input {
+.contenedor-inicio-sesion input,
+#formularioRegistro input {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 20px;
 }
 
-.contenedor-inicio-sesion button {
+.contenedor-inicio-sesion button, 
+.contenido-popup button {
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -64,10 +70,11 @@
     margin-top: 10px;
     width: 100%; 
     box-sizing: border-box; 
-
+    font-size: 20px;
 }
 
-.contenedor-inicio-sesion button:hover {
+.contenedor-inicio-sesion button:hover,
+.contenido-popup button:hover {
     background-color: #0056b3;
 }
 
@@ -84,18 +91,29 @@
 }
 
 .contenido-popup {
+    display: flex;
+    flex-direction: column;
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-size: 20px;
+}
+
+.contenido-popup button{
+    width: 25vh;
+}
+
+#buttonsForm{
+    margin-top: 2%;
 }
 
 .cerrar {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    align-self: flex-end;
 }
 
 .cerrar:hover,
