@@ -27,7 +27,7 @@ body {
 
 .contenedor {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
     height: 75vh;
     max-width: 1200px; 
@@ -121,17 +121,70 @@ button:hover {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+.contenedor-botones{
+    display: flex;
+    width: 61%;
+    justify-content: center;
+}
+
+#noteButtons{
+    display: flex;
+    width: 41vh;
+}
+
+#noteButtons button{
+    margin-right: 2%;
+}
+
+@media (max-width: 400px) {
     .contenedor {
-        flex-direction: row;
-        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin-top: 5%;
     }
 
     .panel-izquierdo {
-        width: 33%; 
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5vh;
     }
 
     .panel-derecho {
-        width: 67%; 
+        width: 100%;
+        margin: 0;
+    }
+
+    #bienvenida{
+        margin-bottom: 5vh;
+    }
+
+    textarea{
+        height: 40vh;
+        margin-bottom: 5vh;
+    }
+
+    .contenedor-botones{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #noteButtons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #noteButtons button{
+        width: 48%;
+        margin: 0;
+    }
+
+    .contenedor-botones button{
+        margin-bottom: 1vh;
+        width: 100%;
+        margin-top: 2%;
     }
 }
